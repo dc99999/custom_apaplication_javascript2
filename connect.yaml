@@ -1,0 +1,19 @@
+deployAs:
+  - name: eventservice
+    applicationType: event
+    endpoint: /triggerdemo2
+    scripts:
+      postDeploy: npm install
+    configuration:
+      securedConfiguration:
+        - key: asodev3
+          description: Commercetools project key
+        - key: IY6G7FwAin0DCSoUEakYnPld
+          description: Commercetools client ID
+        - key: sj4Wgwqv5ozBLzKqswgkcAbhKc7zmn41
+          description: Commercetools client secreet
+        - key: 'manage_product_selections:asodev3 manage_products:asodev3 manage_import_containers:asodev3 manage_extensions:asodev3 view_api_clients:asodev3 manage_types:asodev3 manage_attribute_groups:asodev3 manage_subscriptions:asodev3 view_attribute_groups:asodev3 manage_api_clients:asodev3 manage_categories:asodev3'
+          description: Commercetools client scope
+        - key: us-central1.gcp
+          description: Region of Commercetools project
+         
